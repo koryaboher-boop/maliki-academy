@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية الإمام مالك للفقه المالكي</title>
+    <meta name="description" content="أكاديمية علمية متخصصة في تدريس الفقه المالكي على مذهب الإمام مالك بن أنس">
+    <meta name="keywords" content="الفقه المالكي, الإمام مالك, المذهب المالكي, مختصر خليل, الموطأ, المدونة, الفقه الإسلامي">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Amiri', 'Traditional Arabic', 'Scheherazade New', serif;
+            background: linear-gradient(135deg, #f5f0e8 0%, #e8f5e9 100%);
+            color: #1a3c34;
+            line-height: 1.8;
+            direction: rtl;
+            text-align: right;
+        }
+
+        /* الهيدر */
+        header {
+            background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .logo-text h1 {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .logo-text p {
+            font-size: 0.75rem;
+            opacity: 0.85;
+        }
+
+        nav {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: background 0.3s;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.15);
+        }
+
+        /* القسم الرئيسي */
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: #1b5e20;
+        }
+
+        .hero h2 span {
+            color: #f57f17;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-primary {
+            background: #1b5e20;
+            color: white;
+            box-shadow: 0 4px 12px rgba(27,94,32,0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(27,94,32,0.4);
+        }
+
+        .btn-outline {
+            background: white;
+            color: #1b5e20;
+            border: 2px solid #1b5e20;
+        }
+
+        .btn-outline:hover {
+            background: #e8f5e9;
+        }
+
+        /* بطاقات الإحصائيات */
+        .stats {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #1b5e20;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        /* قسم الدروس */
+        .lessons-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1b5e20;
+            margin-bottom: 2rem;
+            text-align: center;
+            border-bottom: 3px solid #f57f17;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+
+        .lessons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 2rem;
+        }
+
+        .lesson-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-right: 4px solid #1b5e20;
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .lesson-header {
+            background: linear-gradient(135deg, #e8f5e9 0%, #fff3e0 100%);
+            padding: 20px;
+        }
+
+        .lesson-badge {
+            display: inline-block;
+            background: #1b5e20;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-bottom: 8px;
+        }
+
+        .lesson-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1b5e20;
+            margin-bottom: 4px;
+        }
+
+        .lesson-body {
+            padding: 20px;
+        }
+
+        .lesson-meta {
+            display: flex;
+            gap: 16px;
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .lesson-desc {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* قسم المسارات */
+        .tracks-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .track-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.2s;
+        }
+
+        .track-card:hover {
+            transform: translateX(-4px);
+        }
+
+        .track-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #1b5e20, #2e7d32);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .track-info h3 {
+            font-size: 1.2rem;
+            color: #1b5e20;
+            margin-bottom: 4px;
+        }
+
+        .track-info p {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* قسم الاقتباس */
+        .quote-section {
+            background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .quote-section blockquote {
+            font-size: 1.5rem;
+            font-style: italic;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 2;
+        }
+
+        .quote-author {
+            margin-top: 1rem;
+            font-size: 1rem;
+            opacity: 0.85;
+        }
+
+        /* الفوتر */
+        footer {
+            background: #1a3c34;
+            color: #ccc;
+            padding: 3rem 2rem 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: right;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f57f17;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 6px;
+            transition: color 0.2s;
+        }
+
+        .footer-section a:hover {
+            color: #f57f17;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 1rem;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        /* استجابة للجوال */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .header-content {
+                flex-direction: column;
+                gap: 12px;
+            }
+            nav {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- الهيدر -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">📖</div>
+                <div class="logo-text">
+                    <h1>أكاديمية الإمام مالك</h1>
+                    <p>للفقه المالكي وعلومه</p>
+                </div>
+            </div>
+            <nav>
+                <a href="#home">الرئيسية</a>
+                <a href="#tracks">المسارات</a>
+                <a href="#lessons">الدروس</a>
+                <a href="#library">المكتبة</a>
+                <a href="#contact">تواصل معنا</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section class="hero" id="home">
+        <h2>تعلّم الفقه المالكي<br><span>من المبتدئ إلى المتقدم</span></h2>
+        <p>
+            منصة تعليمية متكاملة لتدريس الفقه على مذهب الإمام مالك بن أنس،
+            وفق منهج أهل السنة والجماعة، تعتمد على التدرج العلمي والتأصيل
+            من المصادر المالكية المعتمدة، من الموطأ إلى مختصر خليل وشروحه.
+        </p>
+        <div class="hero-buttons">
+            <a href="#lessons" class="btn btn-primary">ابدأ رحلتك العلمية</a>
+            <a href="#library" class="btn btn-outline">تصفح المكتبة</a>
+        </div>
+    </section>
+
+    <!-- الإحصائيات -->
+    <div class="stats">
+        <div class="stat-card">
+            <div class="stat-number">16</div>
+            <div class="stat-label">درساً تعليمياً</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">وحدات دراسية</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">10</div>
+            <div class="stat-label">فيديوهات تفاعلية</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">سؤال اختباري</div>
+        </div>
+    </div>
+
+    <!-- الاقتباس -->
+    <div class="quote-section">
+        <blockquote>
+            «العلمُ يُؤخَذُ من أفواهِ الرجال، لا من بطونِ الكتب»
+        </blockquote>
+        <p class="quote-author">— الإمام مالك بن أنس</p>
+    </div>
+
+    <!-- قسم المسارات -->
+    <section class="tracks-section" id="tracks">
+        <div style="text-align: center;">
+            <h2 class="section-title">المسارات التعليمية</h2>
+        </div>
+        <div style="margin-top: 2rem;">
+            <div class="track-card">
+                <div class="track-number">1</div>
+                <div class="track-info">
+                    <h3>الوحدة الأولى: مقدمة في علم الفقه ومذهب مالك</h3>
+                    <p>4 دروس • تعريف الفقه، ترجمة الإمام مالك، أصول المذهب، نشأته وانتشاره</p>
+                </div>
+            </div>
+            <div class="track-card">
+                <div class="track-number">2</div>
+                <div class="track-info">
+                    <h3>الوحدة الثانية: كتاب الطهارة (متن الأخضري)</h3>
+                    <p>7 دروس • المياه، الوضوء، الغسل، الحيض والنفاس، التيمم</p>
+                </div>
+            </div>
+            <div class="track-card">
+                <div class="track-number">3</div>
+                <div class="track-info">
+                    <h3>الوحدة الثالثة: كتاب الصلاة (متن الأخضري)</h3>
+                    <p>6 دروس • المواقيت، الشروط والفرائض، السنن، الخشوع، سجود السهو</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الدروس -->
+    <section class="lessons-section" id="lessons">
+        <div style="text-align: center;">
+            <h2 class="section-title">أحدث الدروس</h2>
+        </div>
+        <div class="lessons-grid">
+            <div class="lesson-card">
+                <div class="lesson-header">
+                    <span class="lesson-badge">كتاب الصلاة</span>
+                    <h3 class="lesson-title">سجود السهو: فقه الخطأ البشري وعلاج الوسوسة</h3>
+                </div>
+                <div class="lesson-body">
+                    <div class="lesson-meta">
+                        <span>⏱ 42:20</span>
+                        <span>📝 8 أسئلة</span>
+                    </div>
+                    <p class="lesson-desc">باب السهو من أدق الأبواب الفقهية: القواعد العامة، الخصوصية المالكية (سنتين فأكثر)، علاج الوسواس القهري، أخطاء لا سجود فيها.</p>
+                </div>
+            </div>
+
+            <div class="lesson-card">
+                <div class="lesson-header">
+                    <span class="lesson-badge">كتاب الصلاة</span>
+                    <h3 class="lesson-title">الخشوع وصلاة العاجز وقضاء الفوائت</h3>
+                </div>
+                <div class="lesson-body">
+                    <div class="lesson-meta">
+                        <span>⏱ 38:30</span>
+                        <span>📝 8 أسئلة</span>
+                    </div>
+                    <p class="lesson-desc">البعد الروحي للصلاة (الخشوع)، فقه المشقة (7 حالات لصلاة العاجز)، فقه القضاء والذمة (اليسير 4 صلوات، التفريط، حظر التطوع).</p>
+                </div>
+            </div>
+
+            <div class="lesson-card">
+                <div class="lesson-header">
+                    <span class="lesson-badge">كتاب الصلاة</span>
+                    <h3 class="lesson-title">سنن الصلاة وفضائلها ومكروهاتها</h3>
+                </div>
+                <div class="lesson-body">
+                    <div class="lesson-meta">
+                        <span>⏱ 33:45</span>
+                        <span>📝 8 أسئلة</span>
+                    </div>
+                    <p class="lesson-desc">السنن (الإقامة، السورة، السترة)، الفضائل (رفع اليدين، القنوت)، المكروهات (الالتفات، كراهة البسملة في الفريضة - خصوصية مالكية).</p>
+                </div>
+            </div>
+
+            <div class="lesson-card">
+                <div class="lesson-header">
+                    <span class="lesson-badge">كتاب الصلاة</span>
+                    <h3 class="lesson-title">شروط الصلاة وفرائضها: الأركان الأربعة عشر</h3>
+                </div>
+                <div class="lesson-body">
+                    <div class="lesson-meta">
+                        <span>⏱ 35:20</span>
+                        <span>📝 8 أسئلة</span>
+                    </div>
+                    <p class="lesson-desc">فقه الضرورة (تقديم الوقت على الشروط)، قاعدة الإعادة، الأركان الـ14، مقارنة النية لتكبيرة الإحرام (التلفظ بدعة).</p>
+                </div>
+            </div>
+
+            <div class="lesson-card">
+                <div class="lesson-header">
+                    <span class="lesson-badge">كتاب الصلاة</span>
+                    <h3 class="lesson-title">مواقيت الصلاة: المختار والضروري والقضاء</h3>
+                </div>
+                <div class="lesson-body">
+                    <div class="lesson-meta">
+                        <span>⏱ 32:15</span>
+                        <span>📝 7 أسئلة</span>
+                    </div>
+                    <p class="lesson-desc">التقسيم الثلاثي للأوقات (المختار، الضروري، القضاء)، أوقات كراهة النوافل، استثناءات (قضاء الورد، تحية المسجد، بعد الجمعة).</p>
+                </div>
+            </div>
+
+            <div class="lesson-card">
+                <div class="lesson-header">
+                    <span class="lesson-badge">كتاب الطهارة</span>
+                    <h3 class="lesson-title">الحيض والنفاس: الأحكام والمدد والمحظورات</h3>
+                </div>
+                <div class="lesson-body">
+                    <div class="lesson-meta">
+                        <span>⏱ 28:30</span>
+                        <span>📝 6 أسئلة</span>
+                    </div>
+                    <p class="lesson-desc">تصنيف النساء (مبتدأة، معتادة، حامل)، خصوصية قراءة القرآن للحائض، مدة النفاس 60 يوماً، قاعدة الطهر الفاصل 15 يوماً.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المكتبة -->
+    <section class="lessons-section" id="library">
+        <div style="text-align: center;">
+            <h2 class="section-title">مكتبة الفقه المالكي</h2>
+        </div>
+        <div class="lessons-grid" style="margin-top: 2rem;">
+            <div class="lesson-card">
+                <div class="lesson-header">
+                    <span class="lesson-badge">موطأن</span>
+                    <h3 class="lesson-title">الموطأ للإمام مالك</h3>
+                </div>
+                <div class="lesson-body">
+                    <p class="lesson-desc">أقدم كتب الحديث الفقهية، جمع فيه الإمام مالك أحاديث النبي ﷺ وآثار الصحابة في فقه أهل المدينة.</p>
+                </div>
+            </div>
+            <div class="lesson-card">
+                <div class="lesson-header">
+                    <span class="lesson-badge">مدونات</span>
+                    <h3 class="lesson-title">المدونة الكبرى للإمام سحنون</h3>
+                </div>
+                <div class="lesson-body">
+                    <p class="lesson-desc">أعظم مدونات المذهب المالكي، رواها سحنون عن ابن القاسم عن الإمام مالك، وهي الأصل الثاني للمذهب.</p>
+                </div>
+            </div>
+            <div class="lesson-card">
+                <div class="lesson-header">
+                    <span class="lesson-badge">متون</span>
+                    <h3 class="lesson-title">مختصر خليل بن إسحاق</h3>
+                </div>
+                <div class="lesson-body">
+                    <p class="lesson-desc">أشهر المتون الفقهية في المذهب المالكي، نظم فيه خليل أقوال المذهب على طريق الإيجاز، وعليه شروح كثيرة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>أكاديمية الإمام مالك</h4>
+                <p>منصة تعليمية متكاملة لتدريس الفقه المالكي وعلومه على مذهب الإمام مالك بن أنس إمام دار الهجرة.</p>
+            </div>
+            <div class="footer-section">
+                <h4>روابط سريعة</h4>
+                <a href="#home">الرئيسية</a>
+                <a href="#tracks">المسارات التعليمية</a>
+                <a href="#lessons">الدروس</a>
+                <a href="#library">المكتبة</a>
+            </div>
+            <div class="footer-section">
+                <h4>المستويات الدراسية</h4>
+                <a href="#">المستوى المبتدئ</a>
+                <a href="#">المستوى المتوسط</a>
+                <a href="#">المستوى المتقدم</a>
+            </div>
+            <div class="footer-section">
+                <h4>تواصل معنا</h4>
+                <p>📧 info@maliki-academy.com</p>
+                <p>🌐 www.maliki-academy.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 أكاديمية الإمام مالك للفقه المالكي. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>
