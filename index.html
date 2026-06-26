@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أكاديمية الإمام مالك للفقه المالكي | المنصة التعليمية المتكاملة</title>
+  <meta name="description" content="منصة تعليمية متكاملة لتدريس الفقه على مذهب الإمام مالك بن أنس، تعتمد على التدرج العلمي والتأصيل من المصادر المالكية المعتمدة، من الموطأ إلى مختصر خليل.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16',
+            },
+            emerald: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            },
+            amber: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            }
+          },
+          fontFamily: {
+            display: ['Cairo', 'sans-serif'],
+            arabic: ['Amiri', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Islamic Geometric Pattern Background */
+    .islamic-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 0 L60 30 L30 60 L0 30 Z' fill='none' stroke='%23047857' stroke-width='0.5' stroke-opacity='0.15'/%3E%3Ccircle cx='30' cy='30' r='10' fill='none' stroke='%23d97706' stroke-width='0.5' stroke-opacity='0.15'/%3E%3Cpath d='M0 0 L60 60 M0 60 L60 0' fill='none' stroke='%23047857' stroke-width='0.25' stroke-opacity='0.1'/%3E%3C/svg%3E");
+    }
+    
+    .dark .islamic-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 0 L60 30 L30 60 L0 30 Z' fill='none' stroke='%2310b981' stroke-width='0.5' stroke-opacity='0.08'/%3E%3Ccircle cx='30' cy='30' r='10' fill='none' stroke='%23fbbf24' stroke-width='0.5' stroke-opacity='0.08'/%3E%3Cpath d='M0 0 L60 60 M0 60 L60 0' fill='none' stroke='%2310b981' stroke-width='0.25' stroke-opacity='0.05'/%3E%3C/svg%3E");
+    }
+
+    /* Flip Card CSS Utilities */
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+    .transform-style-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-display transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/80 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-950/80">
+    <div class="container mx-auto px-4 flex h-16 items-center justify-between">
+      <!-- Logo & Name -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="relative flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-700 text-amber-400 dark:bg-emerald-800 shadow-md">
+          <!-- Geometric Dome Icon -->
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 9h20L12 2zM2 9v11a2 2 0 002 2h16a2 2 0 002-2V9M12 12c-2.5 0-4 1.5-4 4.5V22h8v-5.5c0-3-1.5-4.5-4-4.5z"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-display text-lg font-black tracking-tight text-emerald-800 dark:text-emerald-400">أكاديمية الإمام مالك</span>
+          <span class="block text-[10px] text-slate-500 dark:text-slate-400 font-semibold">للفقه المالكي وتدريس المتون</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600 dark:text-slate-300">
+        <a href="#about" class="hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors">عن المذهب</a>
+        <a href="#tracks" class="hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors">المسارات</a>
+        <a href="#lesson-preview" class="hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors">تجرِبة درس</a>
+        <a href="#quiz-preview" class="hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors">اختبر نفسك</a>
+        <a href="#library" class="hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors">المكتبة العلمية</a>
+        <a href="#dashboard" class="hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors">لوحة الطالب</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-3">
+        <!-- Dark Mode Toggle Button -->
+        <button id="theme-toggle" class="rounded-lg p-2 text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800 transition-colors" aria-label="تبديل المظهر">
+          <i id="theme-toggle-icon" data-lucide="sun" class="h-5 w-5"></i>
+        </button>
+
+        <!-- Install Link -->
+        <a href="#download" class="hidden sm:inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-700 px-4 py-2 text-sm font-bold text-white hover:bg-emerald-800 dark:bg-emerald-600 dark:hover:bg-emerald-700 shadow transition-colors">
+          <i data-lucide="download" class="h-4 w-4"></i>
+          تحميل المنصة
+        </a>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="mobile-menu-btn" class="rounded-lg p-2 md:hidden text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800" aria-label="القائمة">
+          <i data-lucide="menu" class="h-6 w-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-menu" class="hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 px-4 py-4 space-y-3 md:hidden">
+      <a href="#about" class="block font-semibold text-slate-600 dark:text-slate-300 py-1.5 hover:text-emerald-700 dark:hover:text-emerald-400">عن المذهب</a>
+      <a href="#tracks" class="block font-semibold text-slate-600 dark:text-slate-300 py-1.5 hover:text-emerald-700 dark:hover:text-emerald-400">المسارات التعليمية</a>
+      <a href="#lesson-preview" class="block font-semibold text-slate-600 dark:text-slate-300 py-1.5 hover:text-emerald-700 dark:hover:text-emerald-400">تجرِبة درس تفاعلي</a>
+      <a href="#quiz-preview" class="block font-semibold text-slate-600 dark:text-slate-300 py-1.5 hover:text-emerald-700 dark:hover:text-emerald-400">اختبار تجريبي</a>
+      <a href="#library" class="block font-semibold text-slate-600 dark:text-slate-300 py-1.5 hover:text-emerald-700 dark:hover:text-emerald-400">المكتبة العلمية</a>
+      <a href="#dashboard" class="block font-semibold text-slate-600 dark:text-slate-300 py-1.5 hover:text-emerald-700 dark:hover:text-emerald-400">لوحة التحكم الفردية</a>
+      <a href="#download" class="flex items-center gap-2 rounded-lg bg-emerald-700 py-2.5 text-center justify-center font-bold text-white shadow">
+        <i data-lucide="download" class="h-4 w-4"></i>
+        تحميل البرنامج المكتبي
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden border-b border-slate-200/50 dark:border-slate-800/40 bg-gradient-to-b from-emerald-50/40 via-white to-slate-50 dark:from-emerald-950/20 dark:via-slate-950 dark:to-slate-950 islamic-pattern">
+    <div class="container mx-auto px-4 py-16 lg:py-24">
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
+        <!-- Hero Text -->
+        <div class="text-right">
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-100 dark:bg-emerald-900/40 px-3.5 py-1 text-xs font-bold text-emerald-800 dark:text-emerald-300 mb-6">
+            <i data-lucide="sparkles" class="h-3 w-3"></i>
+            أكاديمية علمية فقهية متكاملة
+          </span>
+          
+          <h1 class="text-4xl font-black leading-tight text-slate-900 dark:text-white lg:text-5xl xl:text-6xl font-display">
+            تعلّم الفقه المالكي
+            <span class="block mt-2 text-emerald-700 dark:text-emerald-400 font-extrabold">من المبتدئ إلى المتقدم</span>
+          </h1>
+          
+          <p class="mt-6 text-base lg:text-lg leading-relaxed text-slate-600 dark:text-slate-300 font-arabic max-w-xl">
+            منصة تعليمية إلكترونية متكاملة لتدريس الفقه على مذهب الإمام مالك بن أنس (إمام دار الهجرة) رحمه الله، وفق منهج أهل السنة والجماعة، تعتمد على التدرج العلمي والتأصيل من المصادر المعتمدة، من الموطأ إلى مختصر خليل وشروحه وحواشيه.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#tracks" class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-6 py-3.5 font-bold text-white hover:bg-emerald-800 dark:bg-emerald-600 dark:hover:bg-emerald-700 shadow-lg shadow-emerald-700/20 transition-all hover:-translate-y-0.5">
+              ابدأ رحلتك العلمية
+              <i data-lucide="arrow-left" class="h-5 w-5"></i>
+            </a>
+            <a href="#library" class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3.5 font-bold text-slate-700 hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 transition-all">
+              <i data-lucide="book-open" class="h-5 w-5"></i>
+              تصفح المكتبة العلمية
+            </a>
+          </div>
+        </div>
+
+        <!-- Featured Imam Malik Quote Card -->
+        <div class="relative">
+          <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-emerald-600 to-amber-500 opacity-20 blur-xl"></div>
+          <div class="relative overflow-hidden rounded-2xl border-2 border-emerald-500/20 bg-white/95 dark:bg-slate-900/95 p-8 lg:p-10 shadow-2xl backdrop-blur">
+            <div class="mb-6 flex items-center justify-between">
+              <span class="inline-flex items-center gap-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-2.5 py-0.5 text-xs font-semibold text-emerald-800 dark:text-emerald-400">
+                <i data-lucide="quote" class="h-3 w-3 ml-1"></i>
+                قال إمام دار الهجرة
+              </span>
+              <div class="flex gap-1">
+                <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                <span class="h-2 w-2 rounded-full bg-amber-500"></span>
+              </div>
+            </div>
+            
+            <blockquote class="font-arabic text-xl lg:text-2xl leading-loose font-bold text-slate-800 dark:text-slate-100 text-right">
+              «العلمُ يُؤخَذُ من أفواهِ الرجال، لا من بطونِ الكتب»
+            </blockquote>
+
+            <div class="mt-8 flex items-center gap-4 border-t border-slate-200/50 dark:border-slate-800/50 pt-6">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 font-arabic text-xl font-bold text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300">
+                م
+              </div>
+              <div class="text-right">
+                <p class="font-display font-bold text-slate-900 dark:text-white">الإمام مالك بن أنس</p>
+                <p class="text-xs text-slate-500 dark:text-slate-400">صاحب المذهب وإمام دار الهجرة (93 - 179 هـ)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="mt-20 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        <div class="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm dark:border-slate-800/80 dark:bg-slate-900/40 hover:shadow-md transition-shadow">
+          <i data-lucide="users" class="mx-auto mb-3 h-6 w-6 text-emerald-600 dark:text-emerald-400"></i>
+          <p class="text-3xl font-black text-slate-900 dark:text-white font-display">15,000+</p>
+          <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1.5">طلاب مسجلين</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm dark:border-slate-800/80 dark:bg-slate-900/40 hover:shadow-md transition-shadow">
+          <i data-lucide="graduation-cap" class="mx-auto mb-3 h-6 w-6 text-amber-600 dark:text-amber-400"></i>
+          <p class="text-3xl font-black text-slate-900 dark:text-white font-display">480+</p>
+          <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1.5">دروس مسجلة</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm dark:border-slate-800/80 dark:bg-slate-900/40 hover:shadow-md transition-shadow">
+          <i data-lucide="library" class="mx-auto mb-3 h-6 w-6 text-blue-600 dark:text-blue-400"></i>
+          <p class="text-3xl font-black text-slate-900 dark:text-white font-display">120+</p>
+          <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1.5">كتب ومصنفات مالكية</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm dark:border-slate-800/80 dark:bg-slate-900/40 hover:shadow-md transition-shadow">
+          <i data-lucide="file-question" class="mx-auto mb-3 h-6 w-6 text-rose-600 dark:text-rose-400"></i>
+          <p class="text-3xl font-black text-slate-900 dark:text-white font-display">850+</p>
+          <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1.5">فتاوى مؤصلة</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm dark:border-slate-800/80 dark:bg-slate-900/40 hover:shadow-md transition-shadow">
+          <i data-lucide="git-merge" class="mx-auto mb-3 h-6 w-6 text-purple-600 dark:text-purple-400"></i>
+          <p class="text-3xl font-black text-slate-900 dark:text-white font-display">3</p>
+          <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1.5">مسارات تأصيلية</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm dark:border-slate-800/80 dark:bg-slate-900/40 hover:shadow-md transition-shadow">
+          <i data-lucide="headphones" class="mx-auto mb-3 h-6 w-6 text-orange-600 dark:text-orange-400"></i>
+          <p class="text-3xl font-black text-slate-900 dark:text-white font-display">200+</p>
+          <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1.5">ساعة شرح صوتية</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 lg:py-28 bg-white dark:bg-slate-950">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto max-w-3xl text-center mb-16">
+        <span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-400 mb-3">مدخل علمي</span>
+        <h2 class="text-3xl font-black text-slate-900 dark:text-white lg:text-4xl">المذهب المالكي: نشأته وأصوله الكبرى</h2>
+        <div class="mt-4 h-1 w-16 bg-emerald-600 mx-auto rounded-full"></div>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed">
+          تعرف على رابع المذاهب السنية المتبوعة وقيمته التاريخية والعلمية في الفقه الإسلامي
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <!-- Feature 1 -->
+        <div class="group relative rounded-2xl border border-slate-200/80 bg-slate-50/50 p-6 dark:border-slate-800/80 dark:bg-slate-900/30 hover:border-emerald-500/30 hover:bg-white dark:hover:bg-slate-900 transition-all duration-300">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-400">
+            <i data-lucide="history" class="h-6 w-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">نشأة المذهب وانتشاره</h3>
+          <p class="text-sm font-arabic leading-loose text-slate-600 dark:text-slate-400">
+            نشأ المذهب في المدينة المنورة في القرن الثاني الهجري على يد إمام دار الهجرة مالك بن أنس (ت 179 هـ). واعتمد على علم أهل المدينة. انتشر المذهب في الحجاز ومصر والمغرب العربي والأندلس وصعيد مصر وغرب إفريقيا، وصار المذهب الفقهي الأكثر انتشاراً في الغرب الإسلامي.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="group relative rounded-2xl border border-slate-200/80 bg-slate-50/50 p-6 dark:border-slate-800/80 dark:bg-slate-900/30 hover:border-emerald-500/30 hover:bg-white dark:hover:bg-slate-900 transition-all duration-300">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-400">
+            <i data-lucide="scale" class="h-6 w-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">أصول الاستنباط</h3>
+          <p class="text-sm font-arabic leading-loose text-slate-600 dark:text-slate-400">
+            يرتكز المذهب على أصول كبرى أهمها: الكتاب، والسنة النبوية، وإجماع أهل المدينة (وعملهم) الذي عده مالك حجة نقله عن التابعين عن الصحابة، والقياس، والمصالح المرسلة وسد الذرائع والعرف. ويتميز المذهب بمراعاة مقاصد الشريعة ومرونتها وصلاحيتها للواقع.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="group relative rounded-2xl border border-slate-200/80 bg-slate-50/50 p-6 dark:border-slate-800/80 dark:bg-slate-900/30 hover:border-emerald-500/30 hover:bg-white dark:hover:bg-slate-900 transition-all duration-300">
+          <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-rose-100 text-rose-800 dark:bg-rose-900/50 dark:text-rose-400">
+            <i data-lucide="award" class="h-6 w-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">مكانته ومرجعياته العلمية</h3>
+          <p class="text-sm font-arabic leading-loose text-slate-600 dark:text-slate-400">
+            يُعد الموطأ أصل المذهب، وتأتي المدونة الكبرى لسحنون كأصل التفريع. وقد حُظي المذهب بعناية فائقة من أئمة كبار ألفوا المتون (كالأخضري والرسالة والقرطبي وخليل) وشرحوها في القرويين والأزهر والزيتونة، مما جعله صرحاً علمياً متيناً يضبط العبادات والمعاملات.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Tracks Section -->
+  <section id="tracks" class="py-20 lg:py-28 bg-slate-50 dark:bg-slate-900/30 border-y border-slate-200/50 dark:border-slate-800/50">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto max-w-3xl text-center mb-12">
+        <span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-400 mb-3">التدرج المنهجي</span>
+        <h2 class="text-3xl font-black text-slate-900 dark:text-white lg:text-4xl">مسار طالب العلم: من التأسيس إلى التخصص</h2>
+        <div class="mt-4 h-1 w-16 bg-emerald-600 mx-auto rounded-full"></div>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-sm">
+          اضغط على المسار أدناه لعرض تفاصيل المتون، أهداف الدراسة، والوحدات المنهجية
+        </p>
+      </div>
+
+      <!-- Tracks Tabs buttons -->
+      <div class="flex justify-center mb-10">
+        <div class="inline-flex rounded-xl bg-white p-1.5 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-inner">
+          <button onclick="switchTrack('beginner')" id="btn-track-beginner" class="track-tab-btn px-6 py-2.5 text-sm font-bold rounded-lg bg-emerald-700 text-white transition-all shadow">
+            المستوى المبتدئ
+          </button>
+          <button onclick="switchTrack('intermediate')" id="btn-track-intermediate" class="track-tab-btn px-6 py-2.5 text-sm font-bold rounded-lg text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition-all">
+            المستوى المتوسط
+          </button>
+          <button onclick="switchTrack('advanced')" id="btn-track-advanced" class="track-tab-btn px-6 py-2.5 text-sm font-bold rounded-lg text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition-all">
+            المستوى المتقدم
+          </button>
+        </div>
+      </div>
+
+      <!-- Active Track Content Area -->
+      <div id="track-content" class="transition-all duration-300">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Lesson Showcase -->
+  <section id="lesson-preview" class="py-20 lg:py-28 bg-white dark:bg-slate-950">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto max-w-3xl text-center mb-12">
+        <span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-400 mb-3">تطبيق حي للمنصة</span>
+        <h2 class="text-3xl font-black text-slate-900 dark:text-white lg:text-4xl">تجربة الدرس التفاعلي والصوت المتزامن</h2>
+        <div class="mt-4 h-1 w-16 bg-emerald-600 mx-auto rounded-full"></div>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-sm">
+          استمع لشرح المتن بصوت الشيخ وانظر لمزامنة الصوت التلقائي مع النص، مع تصفح الشروحات والخرائط الذهنية للدرس
+        </p>
+      </div>
+
+      <!-- Lesson Widget -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <!-- Left: The Manuscript Matn Screen (RTL) -->
+        <div class="lg:col-span-7 flex flex-col rounded-2xl border-2 border-emerald-500/20 bg-amber-50/20 dark:bg-slate-900/30 overflow-hidden shadow-xl">
+          <!-- Pane Header -->
+          <div class="border-b border-emerald-500/10 bg-amber-100/30 dark:bg-slate-900/80 px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="inline-block h-3 w-3 rounded-full bg-emerald-600"></span>
+              <h3 class="font-bold text-emerald-800 dark:text-emerald-400 text-sm">نص المتن الشرعي (مقدمة الأخضري)</h3>
+            </div>
+            <span class="text-xs font-bold text-amber-700 dark:text-amber-500 bg-amber-500/10 px-2 py-0.5 rounded">متن الأخضري</span>
+          </div>
+
+          <!-- Matn Scroll Body -->
+          <div class="p-6 md:p-8 flex-1 font-arabic text-lg md:text-xl leading-loose text-slate-800 dark:text-slate-200 overflow-y-auto space-y-4 max-h-[420px]" id="matn-scroll-area">
+            <p id="matn-title" class="text-center font-bold text-emerald-800 dark:text-emerald-400 border-b border-slate-200 dark:border-slate-800 pb-2 mb-4">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+            <p id="line-1" class="p-2.5 rounded transition-all duration-300">أَوَّلُ مَا يَجِبُ عَلَى الْمُكَلَّفِ: تَصْحِيحُ إِيمَانِهِ ثُمَّ مَعْرِفَةُ مَا يُصْلِحُ بِهِ فَرْضَ عَيْنِهِ كَأَحْكَامِ الصَّلَاةِ وَالطَّهَارَةِ وَالصِّيَامِ.</p>
+            <p id="line-2" class="p-2.5 rounded transition-all duration-300">وَيَجِبُ عَلَيْهِ أَنْ يُحَافِظَ عَلَى حُدُودِ اللَّهِ وَيَقِفَ عِنْدَ أَمْرِهِ وَنَهْيِهِ وَيَتُوبَ إِلَى اللَّهِ سُبْحَانَهُ قَبْلَ أَنْ يَسْخَطَ عَلَيْهِ.</p>
+            <p id="line-3" class="p-2.5 rounded transition-all duration-300">وَشُرُوطُ اَلتَّوْبَةِ: النَّدَمُ عَلَى مَا فَاتَ، وَالنِّيَّةُ أَنْ لَا يَعُودَ إِلَى ذَنْبٍ فِيمَا بَقِيَ عَلَيْهِ مِنْ عُمُرِهِ، وَأَنْ يَتْرُكَ الْمَعْصِيَةَ فِي سَاعَتِهَا إِنْ كَانَ مُتَلَبِّسًا بِهَا.</p>
+            <p id="line-4" class="p-2.5 rounded transition-all duration-300">وَلَا يَحِلُّ لَهُ أَنْ يُؤَخِّرَ التَّوْبَةَ، وَلَا يَقُولُ: حَتَّى يَهْدِيَنِي اللَّهُ فَإِنَّهُ مِنْ عَلَامَاتِ الشَّقَاءِ وَالْخِذْلَانِ وَطَمْسِ الْبَصِيرَةِ.</p>
+            <p id="line-5" class="p-2.5 rounded transition-all duration-300">وَيَجِبُ عَلَيْهِ حِفْظُ لِسَانِهِ مِنَ الْفَحْشَاءِ وَالْمُنْكِرِ، وَالْكَلَامِ الْقَبِيحِ، وَأَيْمَانِ الطَّلَاقِ، وَانتْهَارِ الْمُسْلِمِ وَإِهَانَتِهِ، وَسَبِّهِ وَتَخْوِيفِهِ فِي غَيْرِ حَقٍّ شَرْعِيٍّ.</p>
+            <p id="line-6" class="p-2.5 rounded transition-all duration-300">وَيَجِبُ عَلَيْهِ حِفْظُ بَصَرِهِ عَنِ النَّظَرِ إِلَى الْحَرَامِ، وَلَا يَحِلُّ لَهُ أَنْ يَنْظُرَ إِلَى مُسْلِمٍ بِنَظْرَةٍ تُؤْذِيهِ إِلَّا أَنْ يَكُونَ فَاسِقًا فَيَجِبُ هِجْرَانُهُ.</p>
+            <p id="line-7" class="p-2.5 rounded transition-all duration-300">وَلَا يَحِلُّ لَهُ أَنْ يَفْعَلَ فِعْلًا حَتَّى يَعْلَمَ حُكْمَ اللَّهِ فِيهِ وَيَسْأَلَ الْعُلَمَاءَ وَيَقْتَدِيَ بِالْمُتَّبِعِينَ لِسُنَّةِ مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ.</p>
+          </div>
+
+          <!-- Fake Audio Control panel widget -->
+          <div class="border-t border-slate-200 dark:border-slate-800 bg-slate-100/50 dark:bg-slate-900/60 p-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <button onclick="toggleAudioSync()" id="audio-play-btn" class="flex h-11 w-11 items-center justify-center rounded-full bg-emerald-700 text-white hover:bg-emerald-800 dark:bg-emerald-600 dark:hover:bg-emerald-700 shadow transition-colors">
+                <i id="audio-play-icon" data-lucide="play" class="h-5 w-5 fill-current"></i>
+              </button>
+              <div class="text-right">
+                <p class="text-xs font-bold text-slate-700 dark:text-slate-300" id="audio-track-title">شرح مقدمة الأخضري - صوت متزامن</p>
+                <p class="text-[10px] text-slate-500 dark:text-slate-400">بصوت الشيخ محمد بن عمر المالك</p>
+              </div>
+            </div>
+
+            <!-- Progress Bar Simulation -->
+            <div class="flex-1 w-full md:max-w-xs flex items-center gap-2">
+              <span class="text-[10px] font-mono text-slate-500" id="audio-time">00:00</span>
+              <div class="flex-1 h-1.5 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
+                <div id="audio-progress-bar" class="absolute right-0 top-0 h-full bg-emerald-600 w-0 transition-all duration-1000"></div>
+              </div>
+              <span class="text-[10px] font-mono text-slate-500">00:35</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <i data-lucide="volume-2" class="h-4 w-4 text-slate-400"></i>
+              <span class="text-xs text-slate-400 font-bold">1.0x</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Tabbed Explanations Widget -->
+        <div class="lg:col-span-5 flex flex-col rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30 overflow-hidden shadow-xl">
+          <!-- Explanatory Tabs -->
+          <div class="flex border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-1">
+            <button onclick="switchExplanation('simplified')" id="btn-exp-simplified" class="exp-tab-btn flex-1 text-center py-2.5 text-xs font-bold rounded-lg bg-slate-100 text-slate-900 dark:bg-slate-800 dark:text-white">
+              التفسير الميسر
+            </button>
+            <button onclick="switchExplanation('detailed')" id="btn-exp-detailed" class="exp-tab-btn flex-1 text-center py-2.5 text-xs font-bold rounded-lg text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white">
+              الشرح التفصيلي
+            </button>
+            <button onclick="switchExplanation('mindmap')" id="btn-exp-mindmap" class="exp-tab-btn flex-1 text-center py-2.5 text-xs font-bold rounded-lg text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white">
+              خريطة ذهنية
+            </button>
+            <button onclick="switchExplanation('summary')" id="btn-exp-summary" class="exp-tab-btn flex-1 text-center py-2.5 text-xs font-bold rounded-lg text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white">
+              جدول تلخيصي
+            </button>
+          </div>
+
+          <!-- Explanation Content -->
+          <div class="p-6 flex-1 overflow-y-auto max-h-[420px]" id="explanation-content-area">
+            <!-- Dynamically rendered by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Quiz Section -->
+  <section id="quiz-preview" class="py-20 lg:py-28 bg-slate-50 dark:bg-slate-900/30 border-y border-slate-200/50 dark:border-slate-800/50">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto max-w-3xl text-center mb-12">
+        <span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-400 mb-3">اختبار تفاعلي سريع</span>
+        <h2 class="text-3xl font-black text-slate-900 dark:text-white lg:text-4xl">اختبر معلوماتك في فقه العبادات والأصول</h2>
+        <div class="mt-4 h-1 w-16 bg-emerald-600 mx-auto rounded-full"></div>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-sm">
+          أجب عن الأسئلة المنهجية المأخوذة من اختبارات الأكاديمية لتحصل على تقييم فوري لإجاباتك
+        </p>
+      </div>
+
+      <!-- Quiz Wrapper Card -->
+      <div class="mx-auto max-w-2xl">
+        <div class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl dark:border-slate-800 dark:bg-slate-900/60 p-6 md:p-8" id="quiz-card">
+          <!-- Quiz Header -->
+          <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-4 mb-6">
+            <span class="text-xs font-bold text-slate-500 dark:text-slate-400" id="quiz-progress-text">السؤال 1 من 3</span>
+            <div class="flex items-center gap-1.5 text-emerald-700 dark:text-emerald-400 font-bold text-sm">
+              <i data-lucide="award" class="h-4 w-4"></i>
+              <span id="quiz-score-indicator">النقاط: 0</span>
+            </div>
+          </div>
+
+          <!-- Question Body -->
+          <div id="quiz-body" class="space-y-6">
+            <!-- Dynamically populated by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Fiqh Library Section -->
+  <section id="library" class="py-20 lg:py-28 bg-white dark:bg-slate-950">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto max-w-3xl text-center mb-12">
+        <span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-400 mb-3">المكتبة الفقهية</span>
+        <h2 class="text-3xl font-black text-slate-900 dark:text-white lg:text-4xl">أمهات كتب المذهب المالكي</h2>
+        <div class="mt-4 h-1 w-16 bg-emerald-600 mx-auto rounded-full"></div>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-sm">
+          تصفح أهم المصادر والمتون والشروحات والحواشي المعتمدة في الإفتاء والقضاء المالكي
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10" id="library-filters">
+        <button onclick="filterLibrary('all')" class="lib-filter-btn px-4 py-2 text-xs font-bold rounded-lg bg-emerald-700 text-white shadow">الكل</button>
+        <button onclick="filterLibrary('موطأ')" class="lib-filter-btn px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800">موطأن ومجاميع</button>
+        <button onclick="filterLibrary('متون')" class="lib-filter-btn px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800">متون معتمدة</button>
+        <button onclick="filterLibrary('شروح')" class="lib-filter-btn px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800">شروح فقهية</button>
+      </div>
+
+      <!-- Library Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="library-grid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Dashboard Mockup & Flashcards -->
+  <section id="dashboard" class="py-20 lg:py-28 bg-slate-50 dark:bg-slate-900/30 border-y border-slate-200/50 dark:border-slate-800/50">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto max-w-3xl text-center mb-16">
+        <span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-400 mb-3">لوحة تحكم الطالب</span>
+        <h2 class="text-3xl font-black text-slate-900 dark:text-white lg:text-4xl">تابع تقدمك في طلب العلم الشرعي</h2>
+        <div class="mt-4 h-1 w-16 bg-emerald-600 mx-auto rounded-full"></div>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-sm">
+          واجهة تفاعلية ذكية ترصد أوقات دراستك، الحفظ، ومستوى أدائك في الاختبارات
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Dashboard Statistics & Track Progress -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-md dark:border-slate-800 dark:bg-slate-900/60">
+            <h3 class="text-lg font-bold text-slate-950 dark:text-white mb-4">مسارك التعليمي الحالي</h3>
+            
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-sm font-bold text-emerald-800 dark:text-emerald-400">تأسيس المبتدئ في العبادات (متن الأخضري)</span>
+              <span class="text-sm font-bold text-slate-600 dark:text-slate-300">45% مكتمل</span>
+            </div>
+            <!-- Progress Bar -->
+            <div class="w-full h-3 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden mb-6">
+              <div class="h-full bg-emerald-600 w-[45%]" style="width: 45%;"></div>
+            </div>
+
+            <!-- Recent activity feed -->
+            <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">الأنشطة الأخيرة</h4>
+            <div class="space-y-3">
+              <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 dark:bg-slate-800/40 text-xs">
+                <div class="flex items-center gap-3">
+                  <span class="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-700 dark:text-emerald-400">
+                    <i data-lucide="check" class="h-4 w-4"></i>
+                  </span>
+                  <div>
+                    <p class="font-bold text-slate-800 dark:text-slate-200">أكملت اختبار "أحكام المياه الوضوء"</p>
+                    <p class="text-[10px] text-slate-500">منذ ساعتين</p>
+                  </div>
+                </div>
+                <span class="font-bold text-emerald-700 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950/60 px-2 py-0.5 rounded">90%</span>
+              </div>
+
+              <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 dark:bg-slate-800/40 text-xs">
+                <div class="flex items-center gap-3">
+                  <span class="flex h-7 w-7 items-center justify-center rounded-full bg-amber-500/10 text-amber-700 dark:text-amber-400">
+                    <i data-lucide="play" class="h-4 w-4"></i>
+                  </span>
+                  <div>
+                    <p class="font-bold text-slate-800 dark:text-slate-200">استمعت لشرح "فرائض الغسل والتيمم"</p>
+                    <p class="text-[10px] text-slate-500">أمس في 05:40 م</p>
+                  </div>
+                </div>
+                <span class="font-bold text-slate-500">22 دقيقة</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unlocked Achievements Badges -->
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-md dark:border-slate-800 dark:bg-slate-900/60">
+            <h3 class="text-lg font-bold text-slate-950 dark:text-white mb-4">الأوسمة والجوائز العلمية</h3>
+            <div class="grid grid-cols-3 gap-4">
+              <div class="text-center p-3 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50">
+                <div class="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-300">
+                  <i data-lucide="award" class="h-5 w-5"></i>
+                </div>
+                <p class="text-xs font-bold text-slate-800 dark:text-slate-200">حافظ المتون</p>
+                <p class="text-[9px] text-slate-400 mt-0.5">حفظ متن الأخضري</p>
+              </div>
+
+              <div class="text-center p-3 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50">
+                <div class="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/50 dark:text-amber-300">
+                  <i data-lucide="zap" class="h-5 w-5"></i>
+                </div>
+                <p class="text-xs font-bold text-slate-800 dark:text-slate-200">المجتهد السريع</p>
+                <p class="text-[9px] text-slate-400 mt-0.5">دراسة 5 أيام متتالية</p>
+              </div>
+
+              <div class="text-center p-3 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 opacity-40">
+                <div class="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-slate-200 text-slate-500 dark:bg-slate-800 dark:text-slate-400">
+                  <i data-lucide="lock" class="h-5 w-5"></i>
+                </div>
+                <p class="text-xs font-bold text-slate-600 dark:text-slate-400">المتفقه المدقق</p>
+                <p class="text-[9px] text-slate-500 mt-0.5">مستوى متوسط</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Flashcard Flip Widget (3D Flip) -->
+        <div class="lg:col-span-5 flex flex-col items-center">
+          <div class="w-full max-w-sm rounded-2xl border border-slate-200 bg-white p-6 shadow-md dark:border-slate-800 dark:bg-slate-900/60 text-center">
+            <h3 class="text-lg font-bold text-slate-950 dark:text-white mb-1">بطاقات المراجعة (Flashcards)</h3>
+            <p class="text-xs text-slate-500 mb-6">اضغط على البطاقة لتظهر لك الإجابة الفقهية فوراً</p>
+            
+            <!-- 3D Card Area -->
+            <div class="w-full h-64 perspective-1000 cursor-pointer" onclick="flipFlashcard()">
+              <div id="flashcard-inner" class="w-full h-full transform-style-3d transition-transform duration-700 relative">
+                <!-- Front Side -->
+                <div class="w-full h-full rounded-2xl border-2 border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-950/20 p-6 flex flex-col justify-between absolute inset-0 backface-hidden">
+                  <div class="flex justify-between items-center text-xs text-emerald-800 dark:text-emerald-400 font-bold">
+                    <span>مستوى مبتدئ (عبادات)</span>
+                    <i data-lucide="refresh-cw" class="h-4 w-4"></i>
+                  </div>
+                  <p class="text-lg font-bold font-arabic leading-relaxed text-slate-900 dark:text-white" id="flashcard-front">
+                    ما هي فرائض الوضوء في المذهب المالكي؟
+                  </p>
+                  <span class="text-xs text-slate-400 italic font-semibold">اضغط للقلب وعرض الجواب</span>
+                </div>
+
+                <!-- Back Side (Rotated 180deg) -->
+                <div class="w-full h-full rounded-2xl border-2 border-amber-500/20 bg-amber-50/50 dark:bg-amber-950/20 p-6 flex flex-col justify-between absolute inset-0 backface-hidden rotate-y-180">
+                  <div class="flex justify-between items-center text-xs text-amber-800 dark:text-amber-400 font-bold">
+                    <span>الجواب الفقهي المعتمد</span>
+                    <i data-lucide="refresh-cw" class="h-4 w-4"></i>
+                  </div>
+                  <p class="text-sm font-bold font-arabic leading-loose text-slate-800 dark:text-slate-100 text-right" id="flashcard-back">
+                    فرائض الوضوء سبعة: (1) النية، (2) غسل الوجه، (3) غسل اليدين للمرفقين، (4) مسح الرأس، (5) غسل الرجلين للكعبين، (6) الفور (الموالاة)، (7) الدلك.
+                  </p>
+                  <span class="text-xs text-slate-400 italic font-semibold">اضغط للعودة إلى السؤال</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Controls -->
+            <div class="mt-6 flex justify-between gap-4">
+              <button onclick="nextFlashcard(-1); event.stopPropagation();" class="flex-1 rounded-lg border border-slate-200 dark:border-slate-800 py-2 text-xs font-bold text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">السابق</button>
+              <button onclick="nextFlashcard(1); event.stopPropagation();" class="flex-1 rounded-lg bg-emerald-700 py-2 text-xs font-bold text-white hover:bg-emerald-800 dark:bg-emerald-600 dark:hover:bg-emerald-700 transition-colors">البطاقة التالية</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download & Installation Section -->
+  <section id="download" class="py-20 lg:py-28 bg-white dark:bg-slate-950">
+    <div class="container mx-auto px-4">
+      <div class="rounded-3xl border-2 border-emerald-500/20 bg-gradient-to-br from-emerald-900 to-emerald-950 p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 islamic-pattern"></div>
+        
+        <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div class="text-right space-y-6">
+            <h2 class="text-3xl font-black md:text-4xl">ابدأ رحلتك العلمية على أي جهاز</h2>
+            <p class="font-arabic text-slate-300 leading-relaxed text-sm md:text-base">
+              احصل على كامل ميزات أكاديمية الإمام مالك؛ بما فيها دروس الصوت المتزامن والمكتبة المالكية الشاملة للكتب الفقهية، ولوحة تقدمك الشخصية واختبارات المراجعة. المنصة متوفرة كتطبيق مكتبي وتطبيق ويب متكامل.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 pt-2">
+              <a href="#" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-slate-950 font-bold hover:bg-slate-100 shadow transition-all hover:-translate-y-0.5">
+                <i data-lucide="monitor" class="h-5 w-5"></i>
+                تحميل لـ Windows (NSIS)
+              </a>
+              <a href="#" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-emerald-900/40 px-6 py-3.5 font-bold hover:bg-emerald-900/70 transition-all">
+                <i data-lucide="chrome" class="h-5 w-5"></i>
+                تصفح نسخة الويب
+              </a>
+            </div>
+
+            <!-- Development instructions -->
+            <div class="border-t border-white/10 pt-6">
+              <h3 class="text-xs font-bold text-amber-400 uppercase tracking-wide mb-3">دليل مطوري المشروع (GitHub)</h3>
+              <div class="bg-black/40 rounded-xl p-4 font-mono text-xs text-left overflow-x-auto select-all text-slate-300" dir="ltr">
+                <span class="text-emerald-400"># clone the repository</span><br>
+                git clone https://github.com/your-username/french-lesson-player.git<br>
+                cd french-lesson-player<br><br>
+                <span class="text-emerald-400"># install dependencies</span><br>
+                bun install <span class="text-slate-500"># or npm install</span><br><br>
+                <span class="text-emerald-400"># run Next.js development server</span><br>
+                bun run dev<br><br>
+                <span class="text-emerald-400"># run Electron application</span><br>
+                npm run electron:dev
+              </div>
+            </div>
+          </div>
+
+          <!-- Screenshot / Visual Graphic Frame -->
+          <div class="relative">
+            <div class="absolute -inset-1 rounded-2xl bg-amber-500 opacity-20 blur-xl"></div>
+            <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900 p-2 shadow-2xl">
+              <!-- Window top-bar Mockup -->
+              <div class="flex items-center justify-between px-3 py-2 border-b border-white/5 bg-slate-950 text-slate-500">
+                <div class="flex gap-1.5">
+                  <span class="h-2.5 w-2.5 rounded-full bg-rose-500"></span>
+                  <span class="h-2.5 w-2.5 rounded-full bg-amber-500"></span>
+                  <span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+                </div>
+                <span class="text-[10px] font-semibold">French Lesson Player - Maliki Academy v0.2.0</span>
+                <i data-lucide="shield" class="h-3 w-3"></i>
+              </div>
+              <!-- Interface illustration -->
+              <div class="bg-slate-950/80 p-6 aspect-video flex flex-col justify-between text-right text-slate-300">
+                <div class="flex justify-between items-start">
+                  <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded">متصل</span>
+                  <h4 class="font-bold text-white text-sm">أكاديمية الإمام مالك التعليمية</h4>
+                </div>
+                
+                <div class="my-auto space-y-3">
+                  <div class="h-2 w-2/3 bg-slate-800 rounded"></div>
+                  <div class="h-2 w-full bg-slate-800 rounded"></div>
+                  <div class="h-2 w-4/5 bg-slate-800 rounded"></div>
+                </div>
+
+                <div class="flex justify-between items-center text-xs text-slate-500 border-t border-white/5 pt-4">
+                  <span>المستوى الأول: متن الأخضري</span>
+                  <span class="flex items-center gap-1.5 text-emerald-400">
+                    <i data-lucide="play" class="h-3.5 w-3.5 fill-current"></i>
+                    الدرس الثاني: المياه والوضوء
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 dark:border-slate-900 bg-slate-100 dark:bg-slate-950 py-12">
+    <div class="container mx-auto px-4 text-center space-y-6">
+      <div class="flex justify-center items-center gap-3">
+        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-700 text-amber-400 dark:bg-emerald-800 shadow">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 9h20L12 2zM2 9v11a2 2 0 002 2h16a2 2 0 002-2V9M12 12c-2.5 0-4 1.5-4 4.5V22h8v-5.5c0-3-1.5-4.5-4-4.5z"/>
+          </svg>
+        </div>
+        <span class="font-display font-black text-slate-800 dark:text-white">أكاديمية الإمام مالك للفقه المالكي</span>
+      </div>
+      
+      <p class="text-xs text-slate-500 dark:text-slate-400 font-arabic max-w-md mx-auto">
+        مشروع علمي خيري لخدمة وتيسير دراسة المذهب المالكي لطلاب العلم في مشارق الأرض ومغاربها.
+      </p>
+
+      <div class="flex justify-center gap-4 text-xs font-semibold text-slate-500 dark:text-slate-400">
+        <a href="#about" class="hover:underline">عن المذهب</a>
+        <span>·</span>
+        <a href="#tracks" class="hover:underline">المسارات المنهجية</a>
+        <span>·</span>
+        <a href="#library" class="hover:underline">المكتبة الكبرى</a>
+        <span>·</span>
+        <a href="#download" class="hover:underline">تحميل البرنامج</a>
+      </div>
+
+      <p class="text-[10px] text-slate-400 dark:text-slate-500">
+        &copy; 2026 أكاديمية الإمام مالك. جميع الحقوق محفوظة لخدمة العلم الشرعي.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Theme Toggle Functionality (Dark / Light)
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleIcon = document.getElementById('theme-toggle-icon');
+    
+    // Check saved theme or system preference
+    if (localStorage.getItem('color-theme') === 'light' || 
+        (!('color-theme' in localStorage) && !window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.remove('dark');
+      themeToggleIcon.setAttribute('data-lucide', 'moon');
+      lucide.createIcons();
+    } else {
+      document.documentElement.classList.add('dark');
+      themeToggleIcon.setAttribute('data-lucide', 'sun');
+      lucide.createIcons();
+    }
+
+    themeToggleBtn.addEventListener('click', function() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+        themeToggleIcon.setAttribute('data-lucide', 'moon');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+        themeToggleIcon.setAttribute('data-lucide', 'sun');
+      }
+      lucide.createIcons();
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Tracks Data
+    const tracksData = {
+      beginner: {
+        title: "المستوى المبتدئ",
+        subtitle: "تأسيس المبتدئ في العبادات",
+        description: "يهدف هذا المستوى إلى بناء أساس متين للطالب المبتدئ في فقه العبادات على مذهب الإمام مالك، عبر دراسة المتون المالكية المختصرة التي اعتُمدت قديمًا وحديثًا في تعليم المبتدئين. يبدأ الطالب بـ متن الأخضري في توحيد العبادات وأحكام الطهارة والصلاة، ثم ينتقل إلى متن العشماوية الذي يوسّع دائرة الفقه ليشمل الزكاة والصوم والحج وبعض المعاملات. ويُعنى هذا المستوى بضبط الأحكام الفقهية العملية مع التركيز على الأدلة الإجمالية وتدريب الطالب على التأدب بأدب طالب العلم.",
+        duration: "6 - 9 أشهر",
+        lessonsCount: 48,
+        books: ["متن الأخضري", "متن العشماوية", "مقدمة ابن أبي زيد الصغرى"],
+        outcomes: [
+          "إتقان أحكام الطهارة والصلاة إتقانًا عمليًا",
+          "ضبط أحكام الزكاة والصوم والحج على المذهب المالكي",
+          "فهم مصطلحات المتون المالكية المختصرة",
+          "التأدب بآداب طالب العلم وحفظ المتون",
+          "القدرة على تطبيق الأحكام في الواقع العملي"
+        ],
+        curriculum: [
+          {
+            module: "الوحدة الأولى: مقدمة في علم الفقه ومذهب مالك",
+            topics: ["تعريف الفقه ومكانته من الشريعة", "نشأة المذهب المالكي وانتشاره", "أصول المذهب المالكي: الكتاب والسنة والإجماع والعمل", "ترجمة الإمام مالك ومنهجه"]
+          },
+          {
+            module: "الوحدة الثانية: كتاب الطهارة (متن الأخضري)",
+            topics: ["المياه وأحكامها", "الوضوء وفرائضه وسننه ونواقضه", "الغسل والتيمم", "إزالة النجاسات"]
+          },
+          {
+            module: "الوحدة الثالثة: كتاب الصلاة (متن الأخضري)",
+            topics: ["مواقيت الصلاة", "الأذان والإقامة", "أركان الصلاة وواجباتها", "سجود السهو وصلاة النفل"]
+          }
+        ]
+      },
+      intermediate: {
+        title: "المستوى المتوسط",
+        subtitle: "الرسالة ومختصر العشماوية مع الشروح",
+        description: "ينتقل الطالب في هذا المستوى من فقه العبادات العام إلى فقه تفصيلي مدقق عبر دراسة الرسالة لابن أبي زيد القيرواني، وهي من أهم المتون المالكية التي جمعت أبواب الفقه كلها على وجه موجز، مع دراسة مختصر العشماوية مع شروحه كشرح العلامة زروق والخرشي. ويُضاف إلى ذلك دراسة فقه المعاملات والأسرة دراسة تفصيلية، مع الاهتمام بمعرفة الخلاف داخل المذهب بين القول المشهور والراجح وغيرهما، والوقوف على أدلة الأحكام من الكتاب والسنة.",
+        duration: "12 - 18 شهرًا",
+        lessonsCount: 96,
+        books: ["الرسالة لابن أبي زيد القيرواني", "مختصر العشماوية مع الشروح", "المدخل لابن بكة", "مقدمة ابن خلدون في الفقه المالكي"],
+        outcomes: [
+          "إتقان أبواب الفقه جميعًا على المذهب المالكي",
+          "معرفة القول المشهور والراجح داخل المذهب",
+          "التمكن من فقه المعاملات والأسرة",
+          "ضبط مصطلحات الفقهاء المالكية المتوسطة",
+          "القدرة على فهم الشروح المالكية المتوسطة"
+        ],
+        curriculum: [
+          {
+            module: "الوحدة الأولى: دراسة الرسالة لابن أبي زيد",
+            topics: ["مقدمة الرسالة والعقيدة الفقهية", "باب الطهارة والصلاة في الرسالة", "باب الزكاة والصوم والحج"]
+          },
+          {
+            module: "الوحدة الثانية: مختصر العشماوية مع الشروح",
+            topics: ["شرح زروق على العشماوية", "شرح الخرشي مختارات من أبوابه", "القول المشهور والراجح في المسائل"]
+          }
+        ]
+      },
+      advanced: {
+        title: "المستوى المتقدم",
+        subtitle: "مختصر خليل وشروح الدردير والدسوقي والحطاب",
+        description: "هذا المستوى هو ذروة التخصص في الفقه المالكي، حيث يدرس الطالب مختصر خليل بن إسحاق مع شروحه الكبرى كـ مواهب الجليل للحطاب، والشرح الكبير للدردير مع حاشية الدسوقي. ويُعنى هذا المستوى بدراسة النوازل والوقائع المستجدة، والفقه المقارن داخل المذهب بين الأقوال والروايات، مع التدريب على تخريج الفروع وضبط القواعد الفقهية المالكية، والوقوف على أصول المذهب وقواعده الكبرى كقواعد ابن شاس والقواعد الفقهية الكبرى للقرافي.",
+        duration: "24 - 36 شهرًا",
+        lessonsCount: 180,
+        books: ["مختصر خليل", "مواهب الجليل للحطاب", "الشرح الكبير للدردير", "حاشية الدسوقي", "الذخيرة للقرافي", "قواعد ابن شاس"],
+        outcomes: [
+          "التمكن من مختصر خليل وشروحه الكبرى",
+          "الإلمام بالنوازل والوقائع المستجدة",
+          "إتقان الفقه المقارن داخل المذهب",
+          "ضبط القواعد الفقهية المالكية الكبرى",
+          "الأهلية للإفتاء والتدريس على المذهب المالكي"
+        ],
+        curriculum: [
+          {
+            module: "الوحدة الأولى: دراسة مختصر خليل",
+            topics: ["كتاب الطهارة في المختصر", "كتاب الصلاة والجنائز", "كتاب الزكاة والصوم والحج"]
+          },
+          {
+            module: "الوحدة الثانية: مواهب الجليل للحطاب",
+            topics: ["منهج الحطاب في الشرح", "تخريج الفروع على الأصول", "الخلاف داخل المذهب وأقوال الصحابة"]
+          }
+        ]
+      }
+    };
+
+    function switchTrack(trackId) {
+      // Toggle button active states
+      document.querySelectorAll('.track-tab-btn').forEach(btn => {
+        btn.className = "track-tab-btn px-6 py-2.5 text-sm font-bold rounded-lg text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition-all";
+      });
+      const activeBtn = document.getElementById('btn-track-' + trackId);
+      activeBtn.className = "track-tab-btn px-6 py-2.5 text-sm font-bold rounded-lg bg-emerald-700 text-white transition-all shadow";
+
+      const data = tracksData[trackId];
+      const outcomesHtml = data.outcomes.map(o => `
+        <li class="flex items-start gap-2.5 text-sm text-slate-600 dark:text-slate-350">
+          <i data-lucide="check-circle-2" class="h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5"></i>
+          <span>${o}</span>
+        </li>
+      `).join('');
+
+      const booksHtml = data.books.map(b => `
+        <span class="inline-block bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-300 text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700">${b}</span>
+      `).join('');
+
+      const curriculumHtml = data.curriculum.map(unit => `
+        <div class="border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900/40 p-5 space-y-3">
+          <h4 class="font-bold text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800/80 pb-2 flex justify-between items-center text-sm">
+            <span>${unit.module}</span>
+            <i data-lucide="chevron-down" class="h-4 w-4 text-slate-400"></i>
+          </h4>
+          <ul class="space-y-2">
+            ${unit.topics.map(topic => `
+              <li class="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 font-arabic">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-600"></span>
+                <span>${topic}</span>
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+      `).join('');
+
+      const trackContent = document.getElementById('track-content');
+      trackContent.innerHTML = `
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-6 space-y-6">
+            <div>
+              <span class="text-xs font-bold text-emerald-700 bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-400 px-3 py-1 rounded-full">${data.subtitle}</span>
+              <h3 class="text-3xl font-black text-slate-900 dark:text-white mt-3">${data.title}</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-450 mt-1.5">المدة المتوقعة: ${data.duration} | عدد الدروس الإجمالي: ${data.lessonsCount} درساً</p>
+            </div>
+            
+            <p class="font-arabic text-sm leading-loose text-slate-600 dark:text-slate-400 whitespace-pre-line">${data.description}</p>
+            
+            <div class="space-y-3">
+              <h4 class="font-bold text-slate-900 dark:text-white text-sm">المخرجات التعليمية المتوقعة:</h4>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                ${outcomesHtml}
+              </ul>
+            </div>
+
+            <div class="space-y-3">
+              <h4 class="font-bold text-slate-900 dark:text-white text-sm">المتون والمراجع المعتمدة:</h4>
+              <div class="flex flex-wrap gap-2">
+                ${booksHtml}
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-4">
+            <h3 class="font-bold text-slate-900 dark:text-white text-base mb-4">الوحدات والدروس التفصيلية</h3>
+            <div class="space-y-4">
+              ${curriculumHtml}
+            </div>
+          </div>
+        </div>
+      `;
+      lucide.createIcons();
+    }
+
+    // Default load beginner track
+    switchTrack('beginner');
+
+    // Interactive Explanations Data for Lesson Preview
+    const explanationData = {
+      simplified: `
+        <h4 class="font-bold text-slate-900 dark:text-white text-base mb-3">التوضيح الميسر والمبسط</h4>
+        <p class="font-arabic text-sm leading-loose text-slate-600 dark:text-slate-400">
+          يمثل نص مقدمة متن الأخضري منهجاً سلوكياً وتربوياً متكاملاً وضعه الشيخ الأخضري رحمه الله قبل الدخول في الأحكام العملية للطهارة والصلاة.
+          <br><br>
+          وقد رتب الشيخ أولويات المكلف كالتالي:
+          <br>
+          <strong>أولاً: تصحيح الإيمان</strong>، وهو الأساس الذي تبنى عليه كل العبادات.
+          <br>
+          <strong>ثانياً: تعلم علم فرض العين</strong>، وهو العلم الفقهي الأساسي الضروري الذي لا يعذر مسلم بجهله، مثل أحكام الطهارة والصلاة والصيام.
+          <br>
+          <strong>ثالثاً: لزوم حدود الله</strong>، والمحافظة عليها والتوبة الفورية من جميع المعاصي والذنوب بشروطها (الندم، الإقلاع الفوري، والعزم على عدم العودة).
+          <br>
+          <strong>رابعاً: حفظ الجوارح</strong>، كاللسان عن الفحش والغيبة والنميمة وأيمان الطلاق، وحفظ البصر عن الحرام.
+        </p>
+      `,
+      detailed: `
+        <h4 class="font-bold text-slate-900 dark:text-white text-base mb-3">الشرح الأكاديمي الموسع</h4>
+        <p class="font-arabic text-xs leading-relaxed text-slate-500 mb-4">مصنف الشرح: حاشية الصاوي والخرشي على المتن</p>
+        <div class="space-y-4 font-arabic text-sm leading-loose text-slate-650 dark:text-slate-405">
+          <div class="border-r-4 border-emerald-600 pr-3">
+            <h5 class="font-bold text-emerald-800 dark:text-emerald-450">قوله: (أول واجب على المكلف)</h5>
+            <p>التكليف عند الأصوليين هو خطاب الله المتعلق بأفعال المكلفين اقتضاءً أو تخييراً أو وضعاً. وأول الواجبات العينية باتفاق الأئمة هو الإيمان بالله وتوحيده وتصحيح العقيدة. ثم بعد ذلك يتدرج إلى تعلم الأحكام الضرورية للعبادة.</p>
+          </div>
+          
+          <div class="border-r-4 border-emerald-600 pr-3">
+            <h5 class="font-bold text-emerald-800 dark:text-emerald-450">قوله: (وشروط التوبة)</h5>
+            <p>التوبة فرض عين على كل مكلف على الفور، ولا يحل تأخيرها. وشروطها المعتبرة ثلاثة: الندم على ما اقترفه، والإقلاع عن المعصية في وقتها، والعزم الأكيد في قلبه على عدم العود إليها طيلة عمره. أما رد المظالم فهو شرط لصحة التوبة في حقوق العباد.</p>
+          </div>
+
+          <div class="border-r-4 border-emerald-600 pr-3">
+            <h5 class="font-bold text-emerald-800 dark:text-emerald-450">قوله: (ولا يحل له أن يفعل فعلاً حتى يعلم حكم الله فيه)</h5>
+            <p>هذه هي القاعدة المالكية المشهورة التي توجب على العامي وطالب العلم التثبت العلمي قبل الإقدام على العقود أو المعاملات أو العبادات، وسؤال أهل الذكر والاجتهاد اتباعاً للسنة النبوية.</p>
+          </div>
+        </div>
+      `,
+      mindmap: `
+        <h4 class="font-bold text-slate-900 dark:text-white text-base mb-4">خريطة مفاهيم مقدمة الأخضري</h4>
+        <div class="space-y-4">
+          <!-- Root Node -->
+          <div class="rounded-lg bg-emerald-700 text-white font-bold p-3 text-center text-sm shadow">
+            مقدمة متن الأخضري
+          </div>
+          
+          <!-- Children -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 space-y-2">
+              <h5 class="font-bold text-xs text-emerald-700 dark:text-emerald-400 border-b pb-1">الواجبات العقدية والمعرفية</h5>
+              <ul class="text-[10px] space-y-1 text-slate-500">
+                <li>تصحيح الإيمان أولاً</li>
+                <li>تعلم فقه الطهارة والصلاة</li>
+                <li>سؤال العلماء قبل الإقدام</li>
+              </ul>
+            </div>
+
+            <div class="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 space-y-2">
+              <h5 class="font-bold text-xs text-amber-700 dark:text-amber-400 border-b pb-1">الواجبات السلوكية والتوبة</h5>
+              <ul class="text-[10px] space-y-1 text-slate-500">
+                <li>التوبة الفورية (بدون تسويف)</li>
+                <li>حفظ اللسان من اللغو وأيمان الطلاق</li>
+                <li>حفظ الجوارح عن محارم الله</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      `,
+      summary: `
+        <h4 class="font-bold text-slate-900 dark:text-white text-base mb-4">جدول تلخيص أحكام المقدمة</h4>
+        <div class="overflow-x-auto border border-slate-200 dark:border-slate-800 rounded-lg">
+          <table class="w-full text-right text-xs">
+            <thead class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-350">
+              <tr>
+                <th class="p-2 border-b">المحور</th>
+                <th class="p-2 border-b">العنصر</th>
+                <th class="p-2 border-b">الحكم الفقهي</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 dark:divide-slate-800 text-slate-600 dark:text-slate-400">
+              <tr>
+                <td class="p-2 font-bold text-slate-800 dark:text-slate-200">الترتيب المعرفي</td>
+                <td class="p-2">تصحيح الإيمان ثم فقه الضرورة</td>
+                <td class="p-2">فرض عين على المكلف</td>
+              </tr>
+              <tr>
+                <td class="p-2 font-bold text-slate-800 dark:text-slate-200">التزكية</td>
+                <td class="p-2">التوبة بشروطها الثلاثة</td>
+                <td class="p-2">واجبة على الفور ويحرم التسويف</td>
+              </tr>
+              <tr>
+                <td class="p-2 font-bold text-slate-800 dark:text-slate-200">حفظ الجوارح</td>
+                <td class="p-2">حفظ اللسان والسمع والبصر</td>
+                <td class="p-2">واجب لحرمة إيذاء المسلم</td>
+              </tr>
+              <tr>
+                <td class="p-2 font-bold text-slate-800 dark:text-slate-200">منهج العمل</td>
+                <td class="p-2">التثبت العلمي قبل العمل وسؤال العلماء</td>
+                <td class="p-2">شرط لصحة مباشرة التكاليف</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      `
+    };
+
+    function switchExplanation(type) {
+      document.querySelectorAll('.exp-tab-btn').forEach(btn => {
+        btn.className = "exp-tab-btn flex-1 text-center py-2.5 text-xs font-bold rounded-lg text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white";
+      });
+      const activeBtn = document.getElementById('btn-exp-' + type);
+      activeBtn.className = "exp-tab-btn flex-1 text-center py-2.5 text-xs font-bold rounded-lg bg-slate-100 text-slate-900 dark:bg-slate-800 dark:text-white";
+
+      document.getElementById('explanation-content-area').innerHTML = explanationData[type];
+      lucide.createIcons();
+    }
+
+    // Default load simplified explanation
+    switchExplanation('simplified');
+
+    // Simulated Audio Sync Player Logic
+    let isPlaying = false;
+    let audioTimer = null;
+    let activeLine = 0;
+    const totalLines = 7;
+    let currentSeconds = 0;
+
+    function toggleAudioSync() {
+      const playIcon = document.getElementById('audio-play-icon');
+      const progressBar = document.getElementById('audio-progress-bar');
+      const timerDisplay = document.getElementById('audio-time');
+
+      if (isPlaying) {
+        // Pause
+        isPlaying = false;
+        clearInterval(audioTimer);
+        playIcon.setAttribute('data-lucide', 'play');
+        lucide.createIcons();
+      } else {
+        // Play
+        isPlaying = true;
+        playIcon.setAttribute('data-lucide', 'pause');
+        lucide.createIcons();
+
+        audioTimer = setInterval(() => {
+          currentSeconds += 1;
+          
+          // Format time MM:SS
+          const m = String(Math.floor(currentSeconds / 60)).padStart(2, '0');
+          const s = String(currentSeconds % 60).padStart(2, '0');
+          timerDisplay.textContent = `${m}:${s}`;
+
+          // Progress bar percentage (max 35s)
+          const pct = Math.min((currentSeconds / 35) * 100, 100);
+          progressBar.style.width = `${pct}%`;
+
+          // Synchronized lines highlight trigger (simulated times)
+          if (currentSeconds >= 0 && currentSeconds < 5) {
+            highlightLine(1);
+          } else if (currentSeconds >= 5 && currentSeconds < 10) {
+            highlightLine(2);
+          } else if (currentSeconds >= 10 && currentSeconds < 16) {
+            highlightLine(3);
+          } else if (currentSeconds >= 16 && currentSeconds < 22) {
+            highlightLine(4);
+          } else if (currentSeconds >= 22 && currentSeconds < 28) {
+            highlightLine(5);
+          } else if (currentSeconds >= 28 && currentSeconds < 32) {
+            highlightLine(6);
+          } else if (currentSeconds >= 32 && currentSeconds < 35) {
+            highlightLine(7);
+          } else {
+            // End of Audio simulation
+            isPlaying = false;
+            clearInterval(audioTimer);
+            currentSeconds = 0;
+            progressBar.style.width = '0%';
+            timerDisplay.textContent = '00:00';
+            playIcon.setAttribute('data-lucide', 'play');
+            clearHighlights();
+            lucide.createIcons();
+          }
+        }, 1000);
+      }
+    }
+
+    function highlightLine(lineNum) {
+      clearHighlights();
+      const lineEl = document.getElementById('line-' + lineNum);
+      if (lineEl) {
+        lineEl.className = "p-2.5 rounded bg-amber-250/60 dark:bg-emerald-950/40 border-r-4 border-emerald-600 dark:border-emerald-450 font-bold transition-all duration-300";
+        // Smooth scroll to highlighted line
+        lineEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    function clearHighlights() {
+      for (let i = 1; i <= totalLines; i++) {
+        const el = document.getElementById('line-' + i);
+        if (el) {
+          el.className = "p-2.5 rounded transition-all duration-300 text-slate-800 dark:text-slate-200";
+        }
+      }
+    }
+
+    // Quiz Simulator Logic
+    const quizQuestions = [
+      {
+        question: "ما هي القاعدة الذهبية التي أرساها المصنف في ترتيب الأولويات المعرفية؟",
+        options: [
+          "تعلّم الفقه قبل العقيدة",
+          "العقيدة الصحيحة ← العلم النافع ← العمل الصالح",
+          "العمل الصالح قبل العلم النافع",
+          "تعلّم الفروع قبل الأصول"
+        ],
+        answer: 1,
+        explanation: "أرسا الإمام الأخضري قاعدة ذهبية بوجوب تصحيح الإيمان أولاً، ثم تعلم فقه الضرورة المصلح للعمل، ثم مباشرة العبادة. وهذا رد على من يقدم الفروع على الأصول."
+      },
+      {
+        question: "ما هي شروط التوبة الثلاثة كما حددها المصنف؟",
+        options: [
+          "الندم، والنية ألا يعود، والإقلاع عن الذنب فوراً",
+          "الاستغفار باللسان، والصدقة، وصيام يومين",
+          "الندم في القلب فقط دون ترك المعصية",
+          "طلب الصفح من الناس دون ندم"
+        ],
+        answer: 0,
+        explanation: "حدد المصنف شروط التوبة في ثلاثة: الندم على ما فات، النية ألا يعود للذنب، وترك المعصية في ساعتها فورا إن كان متلبسا بها. وحذر من آفة تسويف التوبة."
+      },
+      {
+        question: "ما هي فرائض الوضوء السبعة المعتمدة في المذهب المالكي؟",
+        options: [
+          "النية، غسل الوجه، غسل اليدين، مسح الرأس، غسل الرجلين، الموالاة، والدلك",
+          "النية، غسل اليدين، التسمية، المضمضة، الاستنشاق، مسح الأذنين، والترتيب",
+          "غسل الوجه واليدين فقط",
+          "مسح الرأس، غسل الرجلين، والنية دون شروط أخرى"
+        ],
+        answer: 0,
+        explanation: "فرائض الوضوء عند المالكية سبعة: النية، غسل الوجه، غسل اليدين للمرفقين، مسح الرأس، غسل الرجلين للكعبين، الفور (الموالاة)، والدلك (إمرار اليد على العضو)."
+      }
+    ];
+
+    let currentQuestionIdx = 0;
+    let quizScore = 0;
+    let quizSelectedAnswer = null;
+    let isQuestionAnswered = false;
+
+    function renderQuestion() {
+      const quizBody = document.getElementById('quiz-body');
+      const progressText = document.getElementById('quiz-progress-text');
+      const scoreIndicator = document.getElementById('quiz-score-indicator');
+
+      progressText.textContent = `السؤال ${currentQuestionIdx + 1} من ${quizQuestions.length}`;
+      scoreIndicator.textContent = `النقاط: ${quizScore}`;
+
+      const qData = quizQuestions[currentQuestionIdx];
+
+      const optionsHtml = qData.options.map((opt, idx) => `
+        <button onclick="selectQuizOption(${idx})" id="quiz-opt-${idx}" class="w-full text-right p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/40 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors font-semibold text-sm flex items-center justify-between">
+          <span>${opt}</span>
+          <span class="h-5 w-5 rounded-full border border-slate-300 dark:border-slate-700 flex items-center justify-center shrink-0 ml-2" id="quiz-opt-icon-${idx}"></span>
+        </button>
+      `).join('');
+
+      quizBody.innerHTML = `
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white font-arabic mb-4">${qData.question}</h3>
+        <div class="space-y-3" id="quiz-options-container">
+          ${optionsHtml}
+        </div>
+        
+        <div id="quiz-feedback-area" class="hidden rounded-xl p-4 text-xs font-arabic leading-relaxed">
+          <!-- Populated in JS feedback -->
+        </div>
+
+        <div class="flex justify-end mt-6">
+          <button onclick="submitQuizAnswer()" id="quiz-submit-btn" disabled class="rounded-lg bg-emerald-700 hover:bg-emerald-800 px-6 py-2.5 text-xs font-bold text-white shadow disabled:opacity-40 disabled:cursor-not-allowed">
+            تحقق من الإجابة
+          </button>
+        </div>
+      `;
+      isQuestionAnswered = false;
+      quizSelectedAnswer = null;
+    }
+
+    function selectQuizOption(idx) {
+      if (isQuestionAnswered) return;
+      
+      quizSelectedAnswer = idx;
+      
+      // Reset choices selection ring
+      document.querySelectorAll('[id^="quiz-opt-"]').forEach(btn => {
+        btn.classList.remove('border-emerald-600', 'bg-emerald-50/20', 'dark:bg-emerald-950/20');
+      });
+      document.querySelectorAll('[id^="quiz-opt-icon-"]').forEach(dot => {
+        dot.innerHTML = "";
+      });
+
+      const selectedBtn = document.getElementById('quiz-opt-' + idx);
+      selectedBtn.classList.add('border-emerald-600', 'bg-emerald-50/20', 'dark:bg-emerald-950/20');
+      
+      const selectedDot = document.getElementById('quiz-opt-icon-' + idx);
+      selectedDot.innerHTML = '<span class="h-2.5 w-2.5 rounded-full bg-emerald-600"></span>';
+
+      document.getElementById('quiz-submit-btn').removeAttribute('disabled');
+    }
+
+    function submitQuizAnswer() {
+      if (isQuestionAnswered || quizSelectedAnswer === null) return;
+      
+      isQuestionAnswered = true;
+      const qData = quizQuestions[currentQuestionIdx];
+      const submitBtn = document.getElementById('quiz-submit-btn');
+      const feedbackArea = document.getElementById('quiz-feedback-area');
+      
+      // Disable other choices interaction
+      document.querySelectorAll('[id^="quiz-opt-"]').forEach((btn, idx) => {
+        btn.classList.add('cursor-not-allowed');
+      });
+
+      const isCorrect = (quizSelectedAnswer === qData.answer);
+      
+      if (isCorrect) {
+        quizScore += 10;
+        document.getElementById('quiz-score-indicator').textContent = `النقاط: ${quizScore}`;
+        
+        const correctBtn = document.getElementById('quiz-opt-' + quizSelectedAnswer);
+        correctBtn.classList.add('border-emerald-500', 'bg-emerald-500/10', 'text-emerald-800', 'dark:text-emerald-400');
+        
+        feedbackArea.className = "rounded-xl p-4 text-xs font-arabic leading-relaxed bg-emerald-500/10 text-emerald-800 dark:text-emerald-400 mt-6";
+        feedbackArea.innerHTML = `<strong>إجابة صحيحة!</strong><br>${qData.explanation}`;
+      } else {
+        const wrongBtn = document.getElementById('quiz-opt-' + quizSelectedAnswer);
+        wrongBtn.classList.add('border-rose-500', 'bg-rose-500/10', 'text-rose-800', 'dark:text-rose-450');
+
+        const correctBtn = document.getElementById('quiz-opt-' + qData.answer);
+        correctBtn.classList.add('border-emerald-500', 'bg-emerald-500/10');
+        
+        feedbackArea.className = "rounded-xl p-4 text-xs font-arabic leading-relaxed bg-rose-500/10 text-rose-800 dark:text-rose-400 mt-6";
+        feedbackArea.innerHTML = `<strong>إجابة خاطئة.</strong><br>${qData.explanation}`;
+      }
+      
+      feedbackArea.classList.remove('hidden');
+
+      // Change button to next question
+      if (currentQuestionIdx < quizQuestions.length - 1) {
+        submitBtn.textContent = "السؤال التالي";
+        submitBtn.onclick = () => {
+          currentQuestionIdx++;
+          renderQuestion();
+        };
+      } else {
+        submitBtn.textContent = "عرض النتيجة النهائية";
+        submitBtn.onclick = () => {
+          renderQuizResult();
+        };
+      }
+    }
+
+    function renderQuizResult() {
+      const quizBody = document.getElementById('quiz-body');
+      const progressText = document.getElementById('quiz-progress-text');
+      progressText.textContent = "تم إكمال التقييم";
+
+      const maxScore = quizQuestions.length * 10;
+      const pct = (quizScore / maxScore) * 100;
+
+      quizBody.innerHTML = `
+        <div class="text-center py-8 space-y-6">
+          <div class="relative inline-flex items-center justify-center">
+            <!-- Radial Progress SVG -->
+            <svg class="h-28 w-28 transform -rotate-90">
+              <circle cx="56" cy="56" r="48" stroke="currentColor" stroke-width="8" class="text-slate-100 dark:text-slate-800" fill="transparent" />
+              <circle cx="56" cy="56" r="48" stroke="currentColor" stroke-width="8" class="text-emerald-600 dark:text-emerald-400" fill="transparent" 
+                stroke-dasharray="301.6" stroke-dashoffset="${301.6 - (301.6 * pct) / 100}" />
+            </svg>
+            <span class="absolute text-xl font-bold text-slate-800 dark:text-white font-display">${pct}%</span>
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="text-xl font-black text-slate-900 dark:text-white">نتيجة الاختبار: ${quizScore} من أصل ${maxScore} نقطة</h3>
+            <p class="text-sm font-arabic text-slate-550 max-w-sm mx-auto leading-relaxed">
+              ${pct >= 70 ? "ممتاز! تفقه سليم وفهم جيد جداً لمقدمة متن الأخضري وقواعد المذهب المالكي." : "أداء طيب، ننصحك بإعادة مراجعة المتن والشروح في الأكاديمية لتثبيت الحفظ والمسائل."}
+            </p>
+          </div>
+
+          <button onclick="restartQuiz()" class="inline-flex items-center gap-2 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-6 py-2.5 text-xs shadow">
+            <i data-lucide="refresh-cw" class="h-4 w-4"></i>
+            إعادة الاختبار
+          </button>
+        </div>
+      `;
+      lucide.createIcons();
+    }
+
+    function restartQuiz() {
+      currentQuestionIdx = 0;
+      quizScore = 0;
+      renderQuestion();
+    }
+
+    // Load initial quiz
+    renderQuestion();
+
+    // Books Library Data & Filtering
+    const libraryBooks = [
+      {
+        title: "موطأ الإمام مالك",
+        author: "الإمام مالك بن أنس",
+        deathYear: "179 هـ",
+        category: "موطأ",
+        description: "ديوان الفقه والحديث الأعظم للمذهب المالكي، جمع فيه إمام دار الهجرة أصح الآثار والسنن وعمل أهل المدينة المسندة.",
+        chapters: 61,
+        pages: 940,
+        stars: 5
+      },
+      {
+        title: "المدونة الكبرى",
+        author: "الإمام سحنون التنوخي",
+        deathYear: "240 هـ",
+        category: "موطأ",
+        description: "ديوان الرواية الأساسي للمذهب المالكي، رواها سحنون عن ابن القاسم عن الإمام مالك، وهي أصل تفريع المسائل المذهبية.",
+        chapters: 82,
+        pages: 1850,
+        stars: 5
+      },
+      {
+        title: "متن الأخضري",
+        author: "الشيخ عبد الرحمن الأخضري",
+        deathYear: "983 هـ",
+        category: "متون",
+        description: "المتن الأساسي لتأسيس المبتدئين في العبادات على المذهب المالكي، يتميز بمقدمة سلوكية تربوية ممتازة تليها أحكام الطهارة والصلاة.",
+        chapters: 5,
+        pages: 82,
+        stars: 4
+      },
+      {
+        title: "الرسالة الفقهية",
+        author: "ابن أبي زيد القيرواني",
+        deathYear: "386 هـ",
+        category: "متون",
+        description: "تسمى باكورة السعد لكونها جمعت أبواب العقيدة والعبادات والمعاملات الفقهية بنظم يسهل حفظه وفهمه للمتوسطين.",
+        chapters: 45,
+        pages: 280,
+        stars: 5
+      },
+      {
+        title: "الشرح الكبير",
+        author: "الشيخ أحمد الدردير",
+        deathYear: "1201 هـ",
+        category: "شروح",
+        description: "أعظم شروح مختصر خليل في الفقه المالكي المتأخر، يعتمد عليه المفتون في الفتيا والقضاء لتحريره الأقوال والمعتمد.",
+        chapters: 4,
+        pages: 1200,
+        stars: 5
+      },
+      {
+        title: "حاشية الدسوقي",
+        author: "محمد بن عرفة الدسوقي",
+        deathYear: "1230 هـ",
+        category: "شروح",
+        description: "حاشية فقهية دقيقة على الشرح الكبير للعلامة الدردير، تمتاز بجمع الروايات والترجيح المذهبي الدقيق للمسائل المستعصية.",
+        chapters: 4,
+        pages: 2400,
+        stars: 4
+      }
+    ];
+
+    function filterLibrary(category) {
+      // Toggle button states
+      document.querySelectorAll('.lib-filter-btn').forEach(btn => {
+        btn.className = "lib-filter-btn px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800";
+      });
+      event.target.className = "lib-filter-btn px-4 py-2 text-xs font-bold rounded-lg bg-emerald-700 text-white shadow";
+
+      const grid = document.getElementById('library-grid');
+      const filtered = category === 'all' ? libraryBooks : libraryBooks.filter(b => b.category === category);
+
+      grid.innerHTML = filtered.map(book => {
+        const starHtml = Array(book.stars).fill('<i data-lucide="star" class="h-3.5 w-3.5 fill-current text-amber-500"></i>').join('') + 
+                         Array(5 - book.stars).fill('<i data-lucide="star" class="h-3.5 w-3.5 text-slate-300 dark:text-slate-700"></i>').join('');
+        
+        return `
+          <div class="group relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg dark:border-slate-800 dark:bg-slate-900/40 transition-all hover:-translate-y-0.5">
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-500/10">${book.category}</span>
+              <div class="flex gap-0.5">${starHtml}</div>
+            </div>
+            
+            <h3 class="text-lg font-black text-slate-950 dark:text-white font-display mb-1.5">${book.title}</h3>
+            <p class="text-xs text-slate-500 mb-4">مؤلفه: ${book.author} (توفي ${book.deathYear})</p>
+            
+            <p class="font-arabic text-xs leading-relaxed text-slate-650 dark:text-slate-400 line-clamp-3 mb-6">${book.description}</p>
+            
+            <div class="flex items-center justify-between text-[10px] text-slate-450 border-t border-slate-100 dark:border-slate-800/80 pt-4">
+              <span>الفصول: ${book.chapters} باباً</span>
+              <span>عدد الصفحات: ${book.pages} صفحة</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+      lucide.createIcons();
+    }
+
+    // Default load all library books
+    filterLibrary('all');
+
+    // Flashcards Data & Flip Logic
+    const flashcardsData = [
+      {
+        front: "ما هي فرائض الوضوء في المذهب المالكي؟",
+        back: "فرائض الوضوء سبعة: (1) النية، (2) غسل الوجه، (3) غسل اليدين للمرفقين، (4) مسح الرأس، (5) غسل الرجلين للكعبين، (6) الفور (الموالاة)، (7) الدلك."
+      },
+      {
+        front: "ما هو حكم المياه من حيث الطهورية في المذهب؟",
+        back: "الماء على ثلاثة أقسام: (1) طهور وهو الباقي على أصل خلقته يطهر الخبث والحدث، (2) طاهر وهو ما تغير طعمه أو لونه أو ريحه بطاهر فلا يطهر الحدث، (3) نجس وهو ما حلت فيه نجاسة غيرت أحد أوصافه."
+      },
+      {
+        front: "ما هي نواقض الوضوء الإجمالية عند المالكية؟",
+        back: "تنقسم إلى قسمين: (1) أحداث وهي الخارج المعتاد من المخرج المعتاد كالبول والغائط والريح. (2) أسباب أحداث وهي زوال العقل بنوم أو سكر أو إغماء، ولمس اللذة، ومس الذكر."
+      }
+    ];
+
+    let currentCardIdx = 0;
+    let isFlipped = false;
+
+    function flipFlashcard() {
+      const cardInner = document.getElementById('flashcard-inner');
+      if (isFlipped) {
+        cardInner.classList.remove('rotate-y-180');
+        isFlipped = false;
+      } else {
+        cardInner.classList.add('rotate-y-180');
+        isFlipped = true;
+      }
+    }
+
+    function nextFlashcard(dir) {
+      // If flipped, flip back first before transition
+      const cardInner = document.getElementById('flashcard-inner');
+      if (isFlipped) {
+        cardInner.classList.remove('rotate-y-180');
+        isFlipped = false;
+        setTimeout(() => changeCardContent(dir), 300);
+      } else {
+        changeCardContent(dir);
+      }
+    }
+
+    function changeCardContent(dir) {
+      currentCardIdx = (currentCardIdx + dir + flashcardsData.length) % flashcardsData.length;
+      document.getElementById('flashcard-front').textContent = flashcardsData[currentCardIdx].front;
+      document.getElementById('flashcard-back').textContent = flashcardsData[currentCardIdx].back;
+    }
+  </script>
+</body>
+</html>
